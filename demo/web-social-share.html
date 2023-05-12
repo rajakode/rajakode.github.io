@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Good Share Examples</title>
+<link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="dist/good-share.min.css">
+  <style>
+    *, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+}
+
+a{
+    color: #256ee2;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 5%;
+}
+
+footer{
+    margin: 40px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.good-share{
+    border: 1px solid #256ee2;
+    border-radius: 4px;
+    color: #256ee2;
+    font-weight: 600;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 0.85em;
+    margin-right: 20px;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.good-share:hover,
+.good-share:focus{
+	background: #256ee2;
+	color: #FFF;
+	outline: 0;
+}
+
+h2{
+	margin-top: 50px;
+}
+
+h2:first-child{
+	margin-top: 0;
+}
+.good-share-modal{display:none;position:fixed;top:50%;left:50%;width:90%;max-width:550px;-webkit-box-shadow:rgba(0,0,0,.15) 0 2px 10px;box-shadow:0 2px 10px rgba(0,0,0,.15);padding:50px 30px 30px;border-radius:4px;background-color:#fff;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);visibility:hidden}.good-share-modal-open .good-share-modal{display:block;-webkit-animation:fade .2s;animation:fade .2s;visibility:visible;z-index:1000}.good-share-modal-open .good-share-overlay{position:fixed;top:0;width:100%;height:100%;background:hsla(0,0%,100%,.95);-webkit-transition:all .2s;transition:all .2s;-webkit-animation:fade .2s;animation:fade .2s;z-index:900}.close-btn{position:absolute;top:10px;right:10px;width:30px;height:30px;background:transparent;border:0;-webkit-transition:opacity .2s;transition:opacity .2s;cursor:pointer}.close-btn:hover{opacity:.5}.close-btn:after,.close-btn:before{content:"";position:absolute;top:2px;left:14px;height:25px;width:2px;background-color:#848484}.close-btn:before{-webkit-transform:rotate(45deg);transform:rotate(45deg)}.close-btn:after{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.good-share-modal-buttons{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-ms-flex-wrap:wrap;flex-wrap:wrap}.good-share-modal-buttons .btn{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:42px;background:transparent;border:1px solid #848484;border-radius:3px;padding:10px 25px;margin-bottom:20px;font-size:.8em;-webkit-transition:border .2s;transition:border .2s;cursor:pointer}.good-share-modal-buttons .btn:hover{border-color:#000}.good-share-modal-buttons .btn svg{width:20px;margin-right:8px;pointer-events:none}.facebook-btn svg path{fill:#0077f9}.twitter-btn svg path{fill:#1da1f2}.email-btn svg rect{fill:#d14836;stroke:#fff}.email-btn svg path{stroke:#fff}@keyframes fade{0%{opacity:0}to{opacity:1}}@-webkit-keyframes fade{0%{opacity:0}to{opacity:1}}@media only screen and (max-width:400px){.good-share-modal-buttons .btn{width:100%}}
+  </style>
+</head>
+
+<body>
+    <div class="container">
+      <h1>Good Share Examples</h1>
+        <h2>Basic</h2>
+        <button class="good-share">Share It</button>
+
+        <h2>Custom title, text and URL</h2>
+        <button class="good-share" data-share-title="Raja Kode" data-share-text="A JavaScript & CSS website" data-share-url="https://www.rajakode.com">Share</button>
+    </div>
+
+    <script>
+      "use strict";!function(){document.querySelector(".good-share-modal");var t,e,o,a,n=window.location.href,s=document.title,r=document.querySelector("meta[property='og:url']"),c=document.querySelector("meta[property='og:title']"),i=document.querySelector("meta[property='og:description']");if(r&&c&&i)var l=r.getAttribute("content"),d=c.getAttribute("content"),u=i.getAttribute("content");var h;(h=document.createElement("div")).classList.add("good-share-modal"),h.setAttribute("role","dialog"),h.innerHTML='<button class="close-btn" aria-label="close share modal"></button><div class="good-share-modal-buttons"><button class="btn facebook-btn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z"/></svg>Facebook</button><button class="btn twitter-btn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.954 4.569a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.061a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.937 4.937 0 0 0 4.604 3.417 9.868 9.868 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 0 0 2.46-2.548l-.047-.02z"/></svg>Twitter</button><button class="btn email-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16"><rect x=".5" y=".5" width="19" height="15" rx="1.609" fill="#fff" stroke="#000" stroke-miterlimit="10"/><path fill="none" stroke="#000" stroke-miterlimit="10" d="M17.124 3.13l-3.562 2.435L10 8 6.438 5.565 2.876 3.13"/></svg>Email</button></div>',document.body.appendChild(h);!function(){var t=document.createElement("div");t.classList.add("good-share-overlay"),document.body.appendChild(t)}();var g=navigator.userAgent.match(/SamsungBrowser/i),m=function(){document.body.classList.remove("good-share-modal-open"),t.focus()};document.addEventListener("click",(function(r){r.target.classList.contains("good-share")&&(e=r.target.dataset.shareTitle||d||s,o=r.target.dataset.shareText||u||"",a=r.target.dataset.shareUrl||l||n,function(e,o,a){navigator.share&&null===g?navigator.share({title:e,text:o,url:a}).then((function(){console.log("Thanks for sharing!")})).catch(console.error):(document.body.classList.add("good-share-modal-open"),t=document.activeElement,document.querySelector(".good-share-modal-buttons > button").focus())}(e,o,a)),r.target.classList.contains("close-btn")&&m(),r.target.classList.contains("facebook-btn")&&function(t){window.open(t,"share-facebook","width=580,height=296")}("https://www.facebook.com/sharer/sharer.php?u="+a),r.target.classList.contains("twitter-btn")&&function(t){window.open(t,"share-twitter","width=550,height=235")}("https://twitter.com/intent/tweet?text="+(o?e+" / "+o+"&url="+a:e+"&url="+a)),r.target.classList.contains("email-btn")&&function(t){window.open(t,"share-email")}("mailto:?&body="+(o?o+"%0D%0A%0D%0A"+a+"&subject="+e:a+"&subject="+e))}),!1),document.addEventListener("keyup",(function(t){if(!t.defaultPrevented){var e=t.key||t.keyCode;"Escape"!==e&&"Esc"!==e&&27!==e||m()}})),document.querySelector(".good-share-overlay").addEventListener("click",(function(t){m()}))}();
+  </script>
+</body>
+</html>
