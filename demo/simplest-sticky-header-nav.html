@@ -6,6 +6,94 @@
     <link rel="stylesheet" href="./style.css">
     <title>Simplest Sticky Header Nav Example</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    height: 5000px;
+    background: #5c4e82;
+}
+h1 {
+    margin-right: auto;
+    color: #edf0f1;
+    font-size: 40px;
+
+}
+
+li,a,button {
+
+    font-weight: 500;
+    font-size: 19px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top:0;
+    background: #1f253f;
+    transition: 2s;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+
+
+ul{
+    list-style: none;
+    position: relative;
+}
+
+li {
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+ul li a {
+    transition: all .8s ease 0s;
+}
+
+li a:hover {
+    color: #0088a9;
+    transition: 2.5s;
+}
+
+button {
+    padding: 9px 25px;
+    background: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .8s ease 0s;
+}
+
+button:hover {
+    background-color: #5c4e82;
+}
+
+.sticky {
+    background: #fff;
+    transition: 2s;
+}
+
+.sticky h1   {
+    color: #5c4e82;
+    
+}
+
+.sticky a {
+    color:#5c4e82
+}
+
       #carbonads a{color:#fff;text-decoration:none}#carbonads a:hover{color:#fff}
       #css-script-menu{position:absolute;height:90px;width:100%;top:0;left:0;border-top:5px solid #16a1e7;background:#fff;-moz-box-shadow:0 2px 3px 0 rgba(0,0,0,.16);-webkit-box-shadow:0 2px 3px 0 rgba(0,0,0,.16);box-shadow:0 2px 3px 0 rgba(0,0,0,.16);z-index:999999;padding:10px 0;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}.css-script-center{max-width:960px;margin:0 auto}.css-script-center ul{width:212px;float:left;line-height:45px;margin:0;padding:0;list-style:none}.css-script-center a{text-decoration:none}.css-script-ads{max-width:728px;height:90px;float:right}.css-script-clear{clear:both;height:0}#carbonads{font-family:-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,Helvetica,Arial,sans-serif}#carbonads{display:block;overflow:hidden;max-width:728px;position:relative;font-size:22px;box-sizing:content-box}#carbonads>span{display:block}#carbonads a{color:#111;text-decoration:none}#carbonads a:hover{color:#000}.carbon-wrap{display:flex;align-items:center}.carbon-img{display:block;margin:0;line-height:1}.carbon-img img{display:block;height:90px;width:auto}.carbon-text{display:block;padding:0 1em;line-height:1.35;text-align:left}.carbon-poweredby{display:block;position:absolute;bottom:0;right:0;padding:6px 10px;text-align:center;text-transform:uppercase;letter-spacing:.5px;font-weight:600;font-size:8px;border-top-left-radius:4px;line-height:1;color:#ccc!important}@media only screen and (min-width:320px) and (max-width:759px){.carbon-text{font-size:14px}}
     </style>
